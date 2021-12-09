@@ -10,6 +10,11 @@ window.addEventListener('keypress',(e) => {
     game1.makeGuess(guess)
     render()    
 })
+window.addEventListener('onclick',(e) => {
+    const guess = String.fromCharCode(e.charCode)
+    game1.makeGuess(guess)
+    render()    
+})
 
 const render = () => {
     puzzleEl.innerHTML = ''
